@@ -1,4 +1,4 @@
-public abstract class Character {
+public abstract class Character implements ElementControllable{
 
     private final String region;
     private final String name;
@@ -14,5 +14,10 @@ public abstract class Character {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public void useElement() {
+        System.out.println("Go!!!");
     }
 }
